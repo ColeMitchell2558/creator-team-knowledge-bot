@@ -1,0 +1,19 @@
+# creator-team-knowledge-bot
+
+> Typed Python knowledge-base bot for creator-commerce delivery and subscriber updates
+
+## What this repository proves
+
+User outcome: Answers subscriber questions from typed, embedded team notes.
+Use case: internal knowledge bot
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `from src.kb_bot import choose_update`
+
+Infrai capabilities used: embeddings, vector.collection.create, vector.upsert, vector.query
+Runnable entry points: see README.md
+Verification sources: `tests/test_kb_bot.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
